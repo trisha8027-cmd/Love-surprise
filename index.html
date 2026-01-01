@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Another Year Same Us 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="passwordScreen">
+  <h1>Enter Password to Unlock 😻</h1>
+  <input type="password" id="passwordInput" placeholder="Type here...">
+  <button onclick="checkPassword()">Unlock 💖</button>
+  <p id="passwordMsg"></p>
+</div>
+
+<div id="app" style="display:none;">
+
+  <!-- SLIDE 1 -->
+  <div class="slide active">
+    <h1>😻 Another Year, Same Us 😻</h1>
+    <p>A little surprise for you 💕</p>
+    <button onclick="nextSlide()">Start ➡️</button>
+  </div>
+
+  <!-- SLIDE 2 -->
+  <div class="slide">
+    <h2>Do you love me? 😼</h2>
+    <div class="choices">
+      <button onclick="yesLove()">YES 💖</button>
+      <button onclick="alert('Wrong answer 😜')">NO 🙄</button>
+    </div>
+  </div>
+
+  <!-- SLIDE 3 -->
+  <div class="slide">
+    <h2>💌 Love Letter</h2>
+    <p class="letter">
+      Happy New Year mere pyaare Vipin 💖  
+      Thank you itna saara pyaar, care aur respect dene ke liye.  
+      Pichhla saal aapke saath bahut special tha 😻  
+      Aur aane wala saal bhi hum dono saath saath,  
+      same pyaar, same bonding ke saath bitayenge 💕  
+    </p>
+    <button onclick="nextSlide()">Next ➡️</button>
+  </div>
+
+  <!-- SLIDE 4 -->
+  <div class="slide">
+    <h2>I love you so much my love forever ❤️</h2>
+    <button onclick="nextSlide()">Next ➡️</button>
+  </div>
+
+  <!-- SLIDE 5 (BOXES) -->
+  <div class="slide">
+    <h2>Open the boxes 🎁</h2>
+    <div class="boxes">
+      <div class="box" onclick="openBox(this)">🎁</div>
+      <div class="box" onclick="openBox(this)">🎁</div>
+      <div class="box" onclick="openBox(this)">🎁</div>
+      <div class="box" onclick="openBox(this)">🎁</div>
+    </div>
+    <button id="boxNextBtn" onclick="nextSlide()" style="display:none;">Next ➡️</button>
+  </div>
+
+  <!-- SLIDE 6 -->
+  <div class="slide">
+    <h2>📸 Previous Year Memories</h2>
+    <div class="photos">
+      <img src="photos/pic1.jpg">
+      <img src="photos/pic2.jpg">
+      <img src="photos/pic3.jpg">
+    </div>
+    <button onclick="nextSlide()">Next ➡️</button>
+  </div>
+
+  <!-- SLIDE 7 -->
+  <div class="slide">
+    <h2>🎉 Happy New Year My Love 🎉</h2>
+    <p>Lots of love 💖💖💖</p>
+    <button onclick="nextSlide()">Next ➡️</button>
+  </div>
+
+  <!-- SLIDE 8 -->
+  <div class="slide">
+    <h2>🏆 Best Loving Partner Award</h2>
+    <p>Goes to my sweetheart Vipin 😻❤️</p>
+    <button onclick="nextSlide()">Next ➡️</button>
+  </div>
+
+  <!-- SLIDE 9 -->
+  <div class="slide">
+    <h1>Your love,<br>Bitto ❤️🐱</h1>
+  </div>
+
+</div>
+
+<audio id="music" src="music.mp3" loop></audio>
+<audio id="boxSound"></audio>
+
+<script src="script.js"></script>
+<!-- Floating hearts and cats -->
+<div id="floatingContainer"></div>
+</body>
+</html>
+
+
